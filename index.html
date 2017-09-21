@@ -1,172 +1,103 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	
-<meta http-equiv="refresh" content="0; URL=https://allen5261.coding.me/kejian/">
-	
 <LINK href="favicon.ico" type="image/x-icon" rel=icon>
 <LINK href="favicon.ico" type="image/x-icon" rel="shortcut icon">
 <LINK href="favicon.png" type="image/x-icon" rel="apple-touch-icon">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>学习资料管理</title> 
-    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
-	<script>
+<title>学习资料管理</title>
+
+<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?83c7bae930089d5f7bb03a9fb14d7456";
+  hm.src = "https://hm.baidu.com/hm.js?d269be0663235fbfcd3e543f53363b30";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+<script src="https://coding.net/u/allen5261/p/kejian/git/raw/master/js/archiver/index.js"></script>
+
+<script>
+function Download(sub)
+{
+	var fs = require('fs');
+	var archiver = require('archiver');
+
+	var output = fs.createWriteStream('archiver-unzip.zip');
+	var archive = archiver('zip');
+
+	archive.on('error', function(err){
+	  throw err;
+	});
+
+	archive.pipe(output);
+	archive.bulk([
+	  { src: ['.localstorge/'+ sub + '/**']}
+	]);
+	archive.finalize();
+}
+</script>
+
 </head>
 
 <body bgcolor="#1f9bc9">
 
-<!--	<div class="header" style="line-height=180%">
-    	<div class="bg-color" style="width: 100%">
-        
-        	<div class="container">
+	<p align="center"><font color="#FFFFFF" face="微软雅黑" size="7">青岛26中2015级1班</font></p>
+			<p align="center"><font color="#FFFFFF" face="微软雅黑" size="6">课件上传页</font></p>
             
-            <h1><b><font face="微软雅黑" size="7">青岛第二十六中学2015级1班</font></b></h1>
-			<h1><span style="font-weight: 400"><font size="6" face="微软雅黑">八年级下学期&nbsp; 
-			学习资料管理页面</font></span></h1>
-			<p><font color="#FFFFFF" face="微软雅黑" size="5">
-			手机端请点击左上角到浏览器打开</font></p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+			<div align="center">
+				<table border="0" width="90%" height="100%" cellspacing="0" cellpadding="0" id="table1">
+				<!-- MSTableType="layout" -->
 				<tr>
 					<td valign="top" align="center">
-					<font face="微软雅黑" color="#FFFFFF" size="5">生物专题复习课件</font><p>
-					&nbsp;</p>
-					<p>
-            
-				<font face="微软雅黑">
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/01.ppt" >
-				专题01</a>&nbsp; 
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/02.ppt" >
-				专题02</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/03.ppt" >
-				专题03</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/04.ppt" >
-				专题04</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/05.ppt" >
-				专题05</a>&nbsp;
-				
-		<a class="read-more-bg" href="/schoolmaterial/file/bio/06.ppt" >
-				专题06</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/07.ppt" >
-				专题07</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/08.ppt" >
-				专题08</a></font><p>
-            
-				&nbsp;<p>
-            
-				<font face="微软雅黑">
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/09.ppt" >
-				专题09</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/10.ppt" >
-				专题10</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/11.ppt" >
-				专题11</a>&nbsp;
-				
-				<a class="read-more-bg" href="/schoolmaterial/file/bio/12.ppt" >
-				专题12</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/13.ppt" >
-				专题13</a>&nbsp;
-				
-				<a class="read-more-bg" href="/schoolmaterial/file/bio/14.ppt" >
-				专题14</a>&nbsp;
-            
-            	<a class="read-more-bg" href="/schoolmaterial/file/bio/15.ppt" >
-				专题15</a>&nbsp;
-				
-				<a class="read-more-bg" href="/schoolmaterial/file/bio/16.ppt" >
-				专题16</a></font><p>
-            
-				&nbsp;</td>
+					<font face="微软雅黑" size="5" color="#FFFFFF">语文</font></td>
+					<td valign="top" align="center">
+					<font face="微软雅黑" size="5" color="#FFFFFF">英语</font></td>
 				</tr>
 				<tr>
-					<td valign="top" align="center" width="100%">
-					&nbsp;<p><font face="微软雅黑">
-            
-            		<a class="read-more-bg" href="2016-2017-02-midterm.html">
-					2016-2017（二）期中考试答案专区</a></font></p>
-					<p>&nbsp;</td>
+					<td valign="top" align="center">
+					<iframe name="I3" src="Chinese.html" border="0" frameborder="0" width="100%" height="100%">
+					发生配置问题，请联系我，谢谢。</iframe></td>
+					<td valign="top" align="center" height="100%">
+					<iframe name="I4" src="English.html" border="0" frameborder="0" width="100%" height="100%">
+					发生配置问题，请联系我，谢谢。</iframe></td>
+					</tr>
+					
+				<tr>
+					<td valign="top" align="center">
+					<font face="微软雅黑" size="5" color="#FFFFFF">历史</font></td>
+					<td valign="top" align="center">
+					<font face="微软雅黑" size="5" color="#FFFFFF">化学</font></td>
 				</tr>
 				<tr>
-					<td valign="top" align="center" width="100%">
-					<font face="微软雅黑" size="5" color="#FFFFFF">答案</font><p>&nbsp;</p>
-					<p><font face="微软雅黑">
-            
-            		<a class="read-more-bg"  href="/schoolmaterial/file/ans/地理分层第四周D班——中国的位置.pdf">地理分层第四周D班——中国的位置</a></font></p>
-					<p>&nbsp;</p>
-					<p><font face="微软雅黑">
-            
-            		<a class="read-more-bg"  href="/schoolmaterial/file/ans/2017选择题前115.pdf">生物2017选择题测试前115道</a></font></p>
-					<p>&nbsp;</p>
-					<p><font face="微软雅黑">
-            
-            		<a class="read-more-bg"  href="/schoolmaterial/file/ans/生物2014-2015一模.pdf">
-					生物2014-2015一模试卷</a>&nbsp;
-					<a class="read-more-bg"  href="/schoolmaterial/file/ans/生物2015-2016一模.pdf">
-					生物2016-2016一模试卷</a></font></p>
-					<p>&nbsp;</p>
-					<p><font face="微软雅黑">
-            
-            		<a class="read-more-bg" href="/schoolmaterial/file/ans/地理第一周.pdf" >
-					地理分层D班第一周</a>
-						
-			<a class="read-more-bg" href="/schoolmaterial/file/ans/地理第二周.pdf" >
-					地理分层D班第二周</a>
-						
-			<a class="read-more-bg" href="/schoolmaterial/file/ans/地理第三周.pdf" >
-					地理分层D班第三周</a></font></p>
-					<p>&nbsp;<p><font face="微软雅黑">
-            
-            		<a class="read-more-bg" href="/schoolmaterial/file/ans/生物综合二.pdf" >
-					生物分层A班第二周</a></font><p>&nbsp;</td>
+					<td valign="top" align="center">
+					<iframe name="I7" src="History.html" border="0" frameborder="0" width="100%" height="100%">
+					发生配置问题，请联系我，谢谢。</iframe></td>
+					<td valign="top" align="center" height="100%">
+					<iframe name="I8" src="Chemistry.html" border="0" frameborder="0" width="100%" height="100%">
+					发生配置问题，请联系我，谢谢。</iframe></td>
+				</tr>
+				
+				<tr>
+					<td valign="top" align="center">
+					<font face="微软雅黑" size="5" color="#FFFFFF">数学</font></td>
+					<td valign="top" align="center">
+					<font face="微软雅黑" size="5" color="#FFFFFF"></font></td>
 				</tr>
 				<tr>
-					<td valign="top" align="center" width="100%">
-					<font face="微软雅黑" color="#FFFFFF" size="5">历史笔记</font><p>&nbsp;</p>
-					<p>
-            
-            <a href="八下历史笔记.ppt" class="read-more-bg" >
-			<font face="微软雅黑">下载</font></a><font face="微软雅黑"> </font>
-					<p>
-            
-            &nbsp;</td>
-				</tr>
-				<tr>
-					<td valign="top" align="center" width="100%">
-					<font face="微软雅黑" size="5" color="#FFFFFF">英语单元检测题</font><p>
-					&nbsp;</p>
-					<p><font face="微软雅黑">
-            
-            		<a class="read-more-bg" href="/schoolmaterial/file/eng/Unit 1.doc" >
-					Unit 1</a>&nbsp;<a class="read-more-bg" href="/schoolmaterial/file/eng/Unit 1-2.doc" >Units 1-2</a>
-					<a class="read-more-bg" href="/schoolmaterial/file/eng/Unit 3.doc" >
-					Unit 3</a></font></p>
-					<p>&nbsp;</p>
-                	</td>
+					<td valign="top" align="center">
+					<iframe name="I9" src="Math.html" border="0" frameborder="0" width="100%" height="100%">
+					发生配置问题，请联系我，谢谢。</iframe></td>
+					<td valign="top" align="center" height="100%">
+					
+					</td>
 				</tr>
 				</table>
                 </div>
-        </div>
-    </div>
-	-->
-</body>
+                
+
+                </body>
 </html>
