@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include<cmath>
 #include<iomanip>
+#include<string> 
 using namespace std;
 long getFileSize(const char* strFileName)
 {
