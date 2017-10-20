@@ -7,7 +7,8 @@
 #include <sstream>
 #include <locale>
 #include <windows.h>  
-#include <assert.h>  
+#include <assert.h>
+#include<cstdio> 
 using namespace std;
 long getFileSize(const char* strFileName)
 {
