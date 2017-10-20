@@ -1,9 +1,10 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include <sys/types.h>  
 #include <sys/stat.h>
 #include<cmath>
 #include<iomanip>
 #include<string> 
+#include <sstream>
 using namespace std;
 long getFileSize(const char* strFileName)
 {
@@ -21,16 +22,19 @@ double convert(double size)
 }
 
 int main(){
-	string sub,ppt,ssub="Lorem",path;
+	string sub,ssub,path,path_ANSI,ppt,ssub_ANSI;
 	double s=0;
-	cin>>sub;
-				 if(sub=="chi") {freopen("Chinese.html","a",stdout);ssub="ÓïÎÄ"; }
-			else if(sub=="mat") {freopen("Maths.html","a",stdout);ssub="ÊıÑ§"; }
-			else if(sub=="eng") {freopen("English.html","a",stdout);ssub="Ó¢Óï"; }
-			else if(sub=="che") {freopen("Chemistry.html","a",stdout);ssub="»¯Ñ§"; }
-			else if(sub=="his") {freopen("History.html","a",stdout);ssub="ÀúÊ·"; }
 	
+		getline(cin,sub);
 		getline(cin,ppt);
+		
+				 if(sub=="chi") {freopen("Chinese.html","a",stdout);ssub_ANSI="è¯­æ–‡";ssub="ÓïÎÄ"; }
+			else if(sub=="mat") {freopen("Maths.html","a",stdout);ssub_ANSI="æ•°å­¦";ssub="ÊıÑ§"; }
+			else if(sub=="eng") {freopen("English.html","a",stdout);ssub_ANSI="è‹±è¯­";ssub="Ó¢Óï"; }
+			else if(sub=="che") {freopen("Chemistry.html","a",stdout);ssub_ANSI="åŒ–å­¦";ssub="»¯Ñ§"; }
+			else if(sub=="his") {freopen("History.html","a",stdout);ssub_ANSI="å†å²";ssub="ÀúÊ·"; }
+			
+		path_ANSI= ".\\files\\"+ssub_ANSI+"\\"+ppt;
 		
 		path=".\\files\\"+ssub+"\\"+ppt;
 		
@@ -38,14 +42,12 @@ int main(){
 		
 		s=convert(getFileSize(path_c));
 		
-		cout.setf(ios::fixed);
-		
 		cout<<"\n\t\t<tr>\n";
 		cout<<"\t\t<td><font color=\"#FFFFFF\" face=\"source-han-serif-sc\"><span lang=\"zh-cn\">"<<ppt<<"</span></font></td>\n";
-		cout<<"\t\t<td align=\"right\"><font color=\"#FFFFFF\" face=\"Courier New\">"<<fixed<<setprecision(2)<<s<<"MB</font></td>";
+		cout<<"\t\t<td align=\"right\"><font color=\"#FFFFFF\" face=\"Courier New\">"<<fixed<<setprecision(2)<<s<<"MB</font></td>\n";
 		cout<<"\t\t<td align=\"center\" width=\"10\"><font face=\"source-han-serif-sc\" color=\"#FFFFFF\">\n";
-		cout<<"\t\t<a href=\""<<path<<"\" target=\"_blank\">\n";
-		cout<<"\t\t<input type=\"button\" value=\"ÏÂÔØ\" style=\"float: right\"></a></font></td>\n";
-		cout<<"\t\t</tr>\n\t\t\n";
+		cout<<"\t\t<a href=\""<<path_ANSI<<"\" target=\"_blank\">\n";
+		cout<<"\t\t<input type=\"button\" value=\"ä¸‹è½½\" style=\"float: right\"></a></font></td>\n";
+		cout<<"\t\t</tr>\n\t\t";
 	return 0; 
 } 
