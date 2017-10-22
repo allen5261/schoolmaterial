@@ -19,7 +19,11 @@ MainWindow::~MainWindow()
 }
 
 void open(int course){
-    if(course==1){freopen("Chinese.html","a",stdout);ssub="语文"; }
+         if(course==1) {freopen("Chinese.html","a",stdout);ssub="语文"; }
+    else if(course==2) {freopen("Maths.html","a",stdout);ssub="数学"; }
+    else if(course==3) {freopen("English.html","a",stdout);ssub="英语"; }
+    else if(course==4) {freopen("Chemistry.html","a",stdout);ssub="化学"; }
+    else if(course==5) {freopen("History.html","a",stdout);ssub="历史"; }
 }
 
 void MainWindow::on_subject_currentIndexChanged(int index)

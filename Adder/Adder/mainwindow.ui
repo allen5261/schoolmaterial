@@ -29,6 +29,9 @@
    <iconset>
     <normaloff>icon.ico</normaloff>icon.ico</iconset>
   </property>
+  <property name="toolTip">
+   <string/>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -87,12 +90,12 @@
     </item>
     <item>
      <property name="text">
-      <string>历史</string>
+      <string>化学</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>化学</string>
+      <string>历史</string>
      </property>
     </item>
    </widget>
@@ -110,7 +113,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>80</y>
+      <y>77</y>
       <width>51</width>
       <height>22</height>
      </rect>
