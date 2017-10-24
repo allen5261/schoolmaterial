@@ -22,6 +22,10 @@ private slots:
 
     void on_subject_currentIndexChanged(int index);
 
+    void on_pushButton_clicked();
+
+    void on_add_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

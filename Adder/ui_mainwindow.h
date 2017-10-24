@@ -31,8 +31,8 @@ public:
     QLabel *label;
     QLabel *label_2;
     QComboBox *subject;
-    QLineEdit *lineEdit;
-    QPushButton *pushButton;
+    QLineEdit *ppt;
+    QPushButton *add;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -61,14 +61,14 @@ public:
         subject->setObjectName(QStringLiteral("subject"));
         subject->setGeometry(QRect(70, 17, 91, 22));
         subject->setFont(font);
-        lineEdit = new QLineEdit(centralWidget);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setGeometry(QRect(70, 42, 301, 22));
-        lineEdit->setFont(font);
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(170, 77, 51, 22));
-        pushButton->setFont(font);
+        ppt = new QLineEdit(centralWidget);
+        ppt->setObjectName(QStringLiteral("ppt"));
+        ppt->setGeometry(QRect(70, 42, 301, 22));
+        ppt->setFont(font);
+        add = new QPushButton(centralWidget);
+        add->setObjectName(QStringLiteral("add"));
+        add->setGeometry(QRect(170, 77, 51, 22));
+        add->setFont(font);
         MainWindow->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
@@ -96,7 +96,7 @@ public:
          << QApplication::translate("MainWindow", "\345\214\226\345\255\246", Q_NULLPTR)
          << QApplication::translate("MainWindow", "\345\216\206\345\217\262", Q_NULLPTR)
         );
-        pushButton->setText(QApplication::translate("MainWindow", "\346\267\273\345\212\240", Q_NULLPTR));
+        add->setText(QApplication::translate("MainWindow", "\346\267\273\345\212\240", Q_NULLPTR));
     } // retranslateUi
 
 };
