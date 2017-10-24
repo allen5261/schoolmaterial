@@ -13,6 +13,7 @@
 #include<cstdio>
 
 std::string sub,ssub,path,path_ANSI,ppt,ssub_ANSI;
+std::string cmdpath="schoolmateral";
 double s=0;
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -33,6 +34,8 @@ void open(int course){
     else if(course==3) {freopen("D:\\schoolmaterial\\English.html","a",stdout);ssub="英语"; }
     else if(course==4) {freopen("D:\\schoolmaterial\\Chemistry.html","a",stdout);ssub="化学"; }
     else if(course==5) {freopen("D:\\schoolmaterial\\History.html","a",stdout);ssub="历史"; }
+         system("D:");
+         system("cd schoolmaterial");
 }
 
 void MainWindow::on_subject_currentIndexChanged(int index)
@@ -58,7 +61,7 @@ void MainWindow::on_add_clicked()
 {
     QString pptq=ui->ppt->text();
     ppt=pptq.toStdString();
-    path=".\\files\\"+ssub+"\\"+ppt;
+    path="D:\\schoolmaterial\\files\\"+ssub+"\\"+ppt;
     const char *path_c=path.c_str();
 
             s=convert(getFileSize(path_c));
@@ -69,4 +72,16 @@ void MainWindow::on_add_clicked()
             std::cout<<"\t\t<a href=\""<<path<<"\" target=\"_blank\">\n";
             std::cout<<"\t\t<input type=\"button\" value=\"下载\" style=\"float: right\"></a></font></td>\n";
             std::cout<<"\t\t</tr>\n\t\t";
+
+    system("git.exe add -A");
+}
+
+void MainWindow::on_commit_clicked()
+{
+    system("git.exe commit -a -m \"Update\"");
+}
+
+void MainWindow::on_push_clicked()
+{
+    system("git.exe push origin master");
 }

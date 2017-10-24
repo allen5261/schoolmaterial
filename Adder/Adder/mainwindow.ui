@@ -42,11 +42,6 @@
       <height>16</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>思源宋体</family>
-     </font>
-    </property>
     <property name="text">
      <string>科　目</string>
     </property>
@@ -60,11 +55,6 @@
       <height>16</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>思源宋体</family>
-     </font>
-    </property>
     <property name="text">
      <string>文件名</string>
     </property>
@@ -77,11 +67,6 @@
       <width>91</width>
       <height>22</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>思源宋体</family>
-     </font>
     </property>
     <item>
      <property name="text">
@@ -123,28 +108,44 @@
       <height>22</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>思源宋体</family>
-     </font>
-    </property>
    </widget>
    <widget class="QPushButton" name="add">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>77</y>
+      <x>112</x>
+      <y>75</y>
       <width>51</width>
       <height>22</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>思源宋体</family>
-     </font>
-    </property>
     <property name="text">
      <string>添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="commit">
+    <property name="geometry">
+     <rect>
+      <x>172</x>
+      <y>75</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Commit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push">
+    <property name="geometry">
+     <rect>
+      <x>232</x>
+      <y>75</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Push</string>
     </property>
    </widget>
   </widget>

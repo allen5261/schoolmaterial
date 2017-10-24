@@ -33,6 +33,8 @@ public:
     QComboBox *subject;
     QLineEdit *ppt;
     QPushButton *add;
+    QPushButton *commit;
+    QPushButton *push;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -50,25 +52,24 @@ public:
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(21, 20, 41, 16));
-        QFont font;
-        font.setFamily(QString::fromUtf8("\346\200\235\346\272\220\345\256\213\344\275\223"));
-        label->setFont(font);
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(20, 46, 41, 16));
-        label_2->setFont(font);
         subject = new QComboBox(centralWidget);
         subject->setObjectName(QStringLiteral("subject"));
         subject->setGeometry(QRect(70, 17, 91, 22));
-        subject->setFont(font);
         ppt = new QLineEdit(centralWidget);
         ppt->setObjectName(QStringLiteral("ppt"));
         ppt->setGeometry(QRect(70, 42, 301, 22));
-        ppt->setFont(font);
         add = new QPushButton(centralWidget);
         add->setObjectName(QStringLiteral("add"));
-        add->setGeometry(QRect(170, 77, 51, 22));
-        add->setFont(font);
+        add->setGeometry(QRect(112, 75, 51, 22));
+        commit = new QPushButton(centralWidget);
+        commit->setObjectName(QStringLiteral("commit"));
+        commit->setGeometry(QRect(172, 75, 51, 22));
+        push = new QPushButton(centralWidget);
+        push->setObjectName(QStringLiteral("push"));
+        push->setGeometry(QRect(232, 75, 51, 22));
         MainWindow->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
@@ -97,6 +98,8 @@ public:
          << QApplication::translate("MainWindow", "\345\216\206\345\217\262", Q_NULLPTR)
         );
         add->setText(QApplication::translate("MainWindow", "\346\267\273\345\212\240", Q_NULLPTR));
+        commit->setText(QApplication::translate("MainWindow", "Commit", Q_NULLPTR));
+        push->setText(QApplication::translate("MainWindow", "Push", Q_NULLPTR));
     } // retranslateUi
 
 };

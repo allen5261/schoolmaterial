@@ -26,6 +26,12 @@ private slots:
 
     void on_add_clicked();
 
+    void on_commit_clicked();
+
+    void on_commit_2_clicked();
+
+    void on_push_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
