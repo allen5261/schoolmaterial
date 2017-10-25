@@ -61,10 +61,11 @@ void MainWindow::on_add_clicked()
 {
     QString pptq=ui->ppt->text();
     ppt=pptq.toStdString();
-    path="D:\\schoolmaterial\\files\\"+ssub+"\\"+ppt;
-    const char *path_c=path.c_str();
+    path=".\\files\\"+ssub+"\\"+ppt;
+    std::string path_size="D:\\schoolmaterial\\files\\"+ssub+"\\"+ppt;
+    const char *path_size_c=path_size.c_str();
 
-            s=convert(getFileSize(path_c));
+            s=convert(getFileSize(path_size_c));
             std::cout<<"\n\t\t<tr>\n";
             std::cout<<"\t\t<td><font color=\"#FFFFFF\" face=\"source-han-serif-sc\"><span lang=\"zh-cn\">"<<ppt<<"</span></font></td>\n";
             std::cout<<"\t\t<td align=\"right\"><font color=\"#FFFFFF\" face=\"Courier New\">"<<std::fixed<<std::setprecision(2)<<s<<"MB</font></td>\n";
