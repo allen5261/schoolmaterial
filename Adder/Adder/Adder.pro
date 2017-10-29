@@ -20,5 +20,4 @@ HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
 
-DISTFILES += \
-    icon.ico
+DISTFILES +=

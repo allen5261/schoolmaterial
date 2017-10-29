@@ -49,7 +49,7 @@ OBJECTS       = debug/main.o \
 		debug/mainwindow.o \
 		debug/moc_mainwindow.o
 
-DIST          = icon.ico mainwindow.h main.cpp \
+DIST          =  mainwindow.h main.cpp \
 		mainwindow.cpp
 QMAKE_TARGET  = Adder
 DESTDIR        = debug\ #avoid trailing-slash linebreak
@@ -495,7 +495,9 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/qabstractbutton.h \
 		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/QStatusBar \
 		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/qstatusbar.h \
-		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/QWidget
+		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/QWidget \
+		../../../Qt/5.6.3/mingw49_32/include/QtCore/QTextCodec \
+		../../../Qt/5.6.3/mingw49_32/include/QtCore/qtextcodec.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
