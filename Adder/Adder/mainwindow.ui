@@ -25,10 +25,6 @@
   <property name="windowTitle">
    <string>课件上传系统</string>
   </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>icon.ico</normaloff>icon.ico</iconset>
-  </property>
   <property name="toolTip">
    <string/>
   </property>

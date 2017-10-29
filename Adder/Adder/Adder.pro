@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+LIBS += -lpthread libwsock32 libws2_32
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -19,5 +20,4 @@ HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
 
-DISTFILES += \
-    icon.ico
+DISTFILES +=

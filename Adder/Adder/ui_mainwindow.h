@@ -44,9 +44,6 @@ public:
         MainWindow->resize(384, 128);
         MainWindow->setMinimumSize(QSize(384, 128));
         MainWindow->setMaximumSize(QSize(384, 128));
-        QIcon icon;
-        icon.addFile(QStringLiteral("icon.ico"), QSize(), QIcon::Normal, QIcon::Off);
-        MainWindow->setWindowIcon(icon);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label = new QLabel(centralWidget);

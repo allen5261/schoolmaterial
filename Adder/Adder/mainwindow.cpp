@@ -4,6 +4,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include<cmath>
+#include<cstring>
 #include<iomanip>
 #include<string>
 #include <sstream>
@@ -11,6 +12,8 @@
 #include <windows.h>
 #include <assert.h>
 #include<cstdio>
+#include <fstream>
+#include<QTextCodec>
 
 std::string sub,ssub,path,path_ANSI,ppt,ssub_ANSI;
 std::string cmdpath="schoolmaterial";
@@ -55,32 +58,18 @@ double convert(double size)
     return result;
 }
 
-std::string CDownLoadFile::Utf82Ansi(const char* srcCode)
-{
-    int srcCodeLen=0;
-    srcCodeLen=MultiByteToWideChar(CP_UTF8,NULL,srcCode,strlen(srcCode),NULL,0);
-    wchar_t* result_t=new wchar_t[srcCodeLen+1];
-    MultiByteToWideChar(CP_UTF8,NULL,srcCode,strlen(srcCode),result_t,srcCodeLen);
-    result_t[srcCodeLen]='/0';
-    srcCodeLen=WideCharToMultiByte(CP_ACP,NULL,result_t,wcslen(result_t),NULL,0,NULL,NULL);
-    char* result=new char[srcCodeLen+1];
-    WideCharToMultiByte(CP_ACP,NULL,result_t,wcslen(result_t),result,srcCodeLen,NULL,NULL);
-    result[srcCodeLen]='/0';
-    std::string srcAnsiCode="";
-    srcAnsiCode=(string)result;
-    delete result_t;
-    delete result;
-    return srcAnsiCode;
-}
-
 void MainWindow::on_add_clicked()
 {
     QString pptq=ui->ppt->text();
     ppt=pptq.toStdString();
     path=".\\files\\"+ssub+"\\"+ppt;
     std::string path_size="D:\\schoolmaterial\\files\\"+ssub+"\\"+ppt;
-    const char* path_s_c_U8=path_size.c_str();
-    s=convert(getFileSize(path_s_c));
+    QString path_s_q=QString::fromStdString(path_size);
+    QTextCodec *codec=QTextCodec::codecForName("GBK");
+    QByteArray pathsc_q=codec->fromUnicode(path_s_q);
+    const char* pathsc=pathsc_q.toStdString().c_str();
+
+    s=convert(getFileSize(pathsc));
 
             std::cout<<"\n\t\t<tr>\n";
             std::cout<<"\t\t<td><font color=\"#FFFFFF\" face=\"source-han-serif-sc\"><span lang=\"zh-cn\">"<<ppt<<"</span></font></td>\n";

@@ -17,7 +17,7 @@ CXXFLAGS      = -pipe -fno-keep-inline-dllexport -g -std=gnu++0x -frtti -Wall -W
 INCPATH       = -I. -I..\..\..\Qt\5.6.3\mingw49_32\include -I..\..\..\Qt\5.6.3\mingw49_32\include\QtWidgets -I..\..\..\Qt\5.6.3\mingw49_32\include\QtGui -I..\..\..\Qt\5.6.3\mingw49_32\include\QtANGLE -I..\..\..\Qt\5.6.3\mingw49_32\include\QtCore -Idebug -I. -I..\..\..\Qt\5.6.3\mingw49_32\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-subsystem,windows -mthreads
-LIBS        =        -lmingw32 -LD:\Qt\5.6.3\mingw49_32\lib D:\Qt\5.6.3\mingw49_32\lib\libqtmaind.a -lshell32 -LC:\utils\my_sql\my_sql\lib -LC:\utils\postgresql\pgsql\lib D:\Qt\5.6.3\mingw49_32\lib\libQt5Widgetsd.a D:\Qt\5.6.3\mingw49_32\lib\libQt5Guid.a D:\Qt\5.6.3\mingw49_32\lib\libQt5Cored.a 
+LIBS        =        -lmingw32 -LD:\Qt\5.6.3\mingw49_32\lib D:\Qt\5.6.3\mingw49_32\lib\libqtmaind.a -lshell32 -LC:\utils\my_sql\my_sql\lib -LC:\utils\postgresql\pgsql\lib -lpthread -lwsock32 -lws2_32 D:\Qt\5.6.3\mingw49_32\lib\libQt5Widgetsd.a D:\Qt\5.6.3\mingw49_32\lib\libQt5Guid.a D:\Qt\5.6.3\mingw49_32\lib\libQt5Cored.a 
 QMAKE         = D:\Qt\5.6.3\mingw49_32\bin\qmake.exe
 IDC           = idc
 IDL           = midl
@@ -49,7 +49,7 @@ OBJECTS       = debug/main.o \
 		debug/mainwindow.o \
 		debug/moc_mainwindow.o
 
-DIST          = icon.ico mainwindow.h main.cpp \
+DIST          =  mainwindow.h main.cpp \
 		mainwindow.cpp
 QMAKE_TARGET  = Adder
 DESTDIR        = debug\ #avoid trailing-slash linebreak
@@ -495,7 +495,9 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/qabstractbutton.h \
 		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/QStatusBar \
 		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/qstatusbar.h \
-		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/QWidget
+		../../../Qt/5.6.3/mingw49_32/include/QtWidgets/QWidget \
+		../../../Qt/5.6.3/mingw49_32/include/QtCore/QTextCodec \
+		../../../Qt/5.6.3/mingw49_32/include/QtCore/qtextcodec.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
