@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.6.3
+** Created by: Qt User Interface Compiler version 5.2.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -33,8 +33,6 @@ public:
     QComboBox *subject;
     QLineEdit *ppt;
     QPushButton *add;
-    QPushButton *commit;
-    QPushButton *push;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -60,13 +58,7 @@ public:
         ppt->setGeometry(QRect(70, 42, 301, 22));
         add = new QPushButton(centralWidget);
         add->setObjectName(QStringLiteral("add"));
-        add->setGeometry(QRect(112, 75, 51, 22));
-        commit = new QPushButton(centralWidget);
-        commit->setObjectName(QStringLiteral("commit"));
-        commit->setGeometry(QRect(172, 75, 51, 22));
-        push = new QPushButton(centralWidget);
-        push->setObjectName(QStringLiteral("push"));
-        push->setGeometry(QRect(232, 75, 51, 22));
+        add->setGeometry(QRect(167, 80, 51, 22));
         MainWindow->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
@@ -79,24 +71,22 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\350\257\276\344\273\266\344\270\212\344\274\240\347\263\273\347\273\237", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\350\257\276\344\273\266\344\270\212\344\274\240\347\263\273\347\273\237", 0));
 #ifndef QT_NO_TOOLTIP
         MainWindow->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
-        label->setText(QApplication::translate("MainWindow", "\347\247\221\343\200\200\347\233\256", Q_NULLPTR));
-        label_2->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\220\215", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "\347\247\221\343\200\200\347\233\256", 0));
+        label_2->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\220\215", 0));
         subject->clear();
         subject->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\350\257\267\351\200\211\346\213\251...", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\350\257\255\346\226\207", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\346\225\260\345\255\246", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\350\213\261\350\257\255", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\345\214\226\345\255\246", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\345\216\206\345\217\262", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\350\257\267\351\200\211\346\213\251...", 0)
+         << QApplication::translate("MainWindow", "\350\257\255\346\226\207", 0)
+         << QApplication::translate("MainWindow", "\346\225\260\345\255\246", 0)
+         << QApplication::translate("MainWindow", "\350\213\261\350\257\255", 0)
+         << QApplication::translate("MainWindow", "\345\214\226\345\255\246", 0)
+         << QApplication::translate("MainWindow", "\345\216\206\345\217\262", 0)
         );
-        add->setText(QApplication::translate("MainWindow", "\346\267\273\345\212\240", Q_NULLPTR));
-        commit->setText(QApplication::translate("MainWindow", "Commit", Q_NULLPTR));
-        push->setText(QApplication::translate("MainWindow", "Push", Q_NULLPTR));
+        add->setText(QApplication::translate("MainWindow", "\346\267\273\345\212\240", 0));
     } // retranslateUi
 
 };
