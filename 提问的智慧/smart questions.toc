@@ -1,0 +1,38 @@
+\contentsline {section}{\numberline {1}\href {https://github.com/ryanhanwu/smartquestions/blob/master/history.md}{原文版本历史}}{2}{section.1}
+\contentsline {section}{\numberline {2}声明}{2}{section.2}
+\contentsline {section}{\numberline {3}简介}{2}{section.3}
+\contentsline {section}{\numberline {4}在提问之前}{3}{section.4}
+\contentsline {section}{\numberline {5}当你提问时}{3}{section.5}
+\contentsline {subsection}{\numberline {5.1}慎选提问的论坛}{3}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Stack Overflow}{4}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}网站和 IRC 论坛}{4}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}第二步，使用项目邮件列表}{5}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}使用有意义且描述明确的标题}{5}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}使问题容易回复}{6}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}用清晰、正确、精准并语法正确的语句}{6}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}使用易于读取且标准的文件格式发送问题}{7}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}精确的描述问题并言之有物}{7}{subsection.5.9}
+\contentsline {subsection}{\numberline {5.10}话不在多而在精}{8}{subsection.5.10}
+\contentsline {subsection}{\numberline {5.11}别动辄声称找到 Bug}{8}{subsection.5.11}
+\contentsline {subsection}{\numberline {5.12}低声下气不能代替你的功课}{8}{subsection.5.12}
+\contentsline {subsection}{\numberline {5.13}描述问题症状而非你的猜测}{8}{subsection.5.13}
+\contentsline {subsection}{\numberline {5.14}按发生时间先后列出问题症状}{9}{subsection.5.14}
+\contentsline {subsection}{\numberline {5.15}描述目标而不是过程}{9}{subsection.5.15}
+\contentsline {subsection}{\numberline {5.16}别要求使用私人电邮回复}{9}{subsection.5.16}
+\contentsline {subsection}{\numberline {5.17}清楚明确的表达你的问题以及需求}{9}{subsection.5.17}
+\contentsline {subsection}{\numberline {5.18}询问有关代码的问题时}{10}{subsection.5.18}
+\contentsline {subsection}{\numberline {5.19}别把自己家庭作业的问题贴上来}{10}{subsection.5.19}
+\contentsline {subsection}{\numberline {5.20}去掉无意义的提问句}{10}{subsection.5.20}
+\contentsline {subsection}{\numberline {5.21}即使你很急也不要在标题写\texttt {紧急}}{10}{subsection.5.21}
+\contentsline {subsection}{\numberline {5.22}礼多人不怪，而且有时还很有帮助}{10}{subsection.5.22}
+\contentsline {subsection}{\numberline {5.23}问题解决后，加个简短的补充说明}{11}{subsection.5.23}
+\contentsline {section}{\numberline {6}如何解读答案}{11}{section.6}
+\contentsline {subsection}{\numberline {6.1}如果还是搞不懂}{12}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}处理无礼的回应}{12}{subsection.6.2}
+\contentsline {section}{\numberline {7}如何避免扮演失败者}{12}{section.7}
+\contentsline {section}{\numberline {8}不该问的问题}{13}{section.8}
+\contentsline {section}{\numberline {9}好问题与蠢问题}{14}{section.9}
+\contentsline {section}{\numberline {10}如果得不到回答}{15}{section.10}
+\contentsline {section}{\numberline {11}如何更好地回答问题}{15}{section.11}
+\contentsline {section}{\numberline {12}相关资源}{15}{section.12}
+\contentsline {section}{\numberline {13}鸣谢}{15}{section.13}
