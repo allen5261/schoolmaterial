@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}{引言}}{2}{section.1}
+\contentsline {section}{\numberline {2}{“程序不好用”}}{2}{section.2}
+\contentsline {section}{\numberline {3}{“演示给我看”}}{2}{section.3}
+\contentsline {section}{\numberline {4}{“告诉我该怎么做”}}{3}{section.4}
+\contentsline {section}{\numberline {5}{“哪儿出错了？在我看来一切正常哦！”}}{3}{section.5}
+\contentsline {section}{\numberline {6}{“出了问题之后，我做了……”}}{3}{section.6}
+\contentsline {section}{\numberline {7}{“我想粒子的跃迁与错误的极化有关”}}{4}{section.7}
+\contentsline {section}{\numberline {8}{“真是奇怪，刚才还不好用，怎么现在又好了？”}}{4}{section.8}
+\contentsline {section}{\numberline {9}{“我把磁盘装进了 Windows……”}}{5}{section.9}
+\contentsline {section}{\numberline {10}{小结}}{5}{section.10}
