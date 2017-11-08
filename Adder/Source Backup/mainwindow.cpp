@@ -82,15 +82,5 @@ void MainWindow::on_add_clicked()
     
 	fclose(stdout);
 
-    ui->ppt->text()="";
-}
-
-void MainWindow::on_commit_clicked()
-{
-    system("commit.bat");
-}
-
-void MainWindow::on_push_clicked()
-{
-    system("push.bat");
+    ui->ppt->clear();
 }
