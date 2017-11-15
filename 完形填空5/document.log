@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.8.28)  14 NOV 2017 12:09
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.8.28)  15 NOV 2017 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,14 +1048,14 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 107--108
 
 [1
 
-] [2] (./document.aux) ) 
+] [2] [3] (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 17346 strings out of 493005
- 349741 string characters out of 6137956
- 406321 words of memory out of 5000000
- 21262 multiletter control sequences out of 15000+600000
+ 17376 strings out of 493005
+ 351616 string characters out of 6137956
+ 408321 words of memory out of 5000000
+ 21292 multiletter control sequences out of 15000+600000
  4086 words of font info for 33 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  46i,5n,66p,10489b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.pdf (2 pages).
+Output written on document.pdf (3 pages).
