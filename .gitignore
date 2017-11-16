@@ -26,3 +26,10 @@
 *.out
 *.app
 *.exe
+
+# TeX Profiles
+*.aux
+*.log
+*.gz
+*.toc
+*.out
