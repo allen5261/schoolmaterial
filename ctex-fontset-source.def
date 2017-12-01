@@ -36,16 +36,16 @@
       {
         \ctex_punct_set:n { windows }
         \setCJKmainfont
-          [ BoldFont = 思源黑体 Medium , ItalicFont = 方正楷体_GBK ] { 思源宋体 }
-        \setCJKsansfont { 思源黑体 }
+          [ BoldFont = SourceHanSansSC-Medium.otf , ItalicFont = FZKTK.TTF ] { SourceHanSerifSC-Regular.otf }
+        \setCJKsansfont { Source Han Sans SC Regular }
         \ctex_punct_map_family:nn { \CJKsfdefault } { zhhei }
-        \setCJKmonofont { 华文仿宋 }
-        \setCJKfamilyfont { zhkai }  { 方正楷体_GBK }
-        \setCJKfamilyfont { zhfs }   { 华文仿宋 }
-        \setCJKfamilyfont { zhsong } { 思源宋体 }
-        \setCJKfamilyfont { zhhei }  { 思源黑体 Medium }
-        \setCJKfamilyfont { zhli }   { 隶书 }
-        \setCJKfamilyfont { zhyou }  { 幼圆 }
+        \setCJKmonofont { STFANGSO.TTF }
+        \setCJKfamilyfont { zhkai }  { FZKTK.TTF }
+        \setCJKfamilyfont { zhfs }   { STFANGSO.TTF }
+        \setCJKfamilyfont { zhsong } { SourceHanSerifSC-Regular.otf }
+        \setCJKfamilyfont { zhhei }  { SourceHanSansSC-Medium.otf }
+        \setCJKfamilyfont { zhli }   { SIMLI.TTF }
+        \setCJKfamilyfont { zhyou }  { SIMYOU.TTF }
         \ctex_punct_map_family:nn { \CJKrmdefault } { zhsong }
         \ctex_punct_map_family:nn { \CJKttdefault } { zhfs }
         \ctex_punct_map_itshape:nn { \CJKrmdefault } { zhkai }
@@ -68,29 +68,29 @@
     \sys_if_engine_uptex:TF
       {
         \ctex_set_upfonts:nnnnnn
-          {思源宋体} {思源黑体 Medium} {方正楷体_GBK}
-          {思源黑体} {思源黑体}
-          {华文仿宋}
+          {SourceHanSerifSC-Regular.otf} {SourceHanSansSC-Medium.otf} {FZKTK.TTF}
+          {SourceHanSansSC-Regular.otf} {SourceHanSansSC-Regular.otf}
+          {STFANGSO.TTF}
         \ctex_set_upfamily:nnn { zhsong } { upzhserif } {}
         \ctex_set_upfamily:nnn { zhhei } { upzhserifb } {}
         \ctex_set_upfamily:nnn { zhfs } { upzhmono} {}
         \ctex_set_upfamily:nnn { zhkai } { upzhserifit } {}
         \ctex_set_upfamily:nnn { zhli } { upschrm } {}
-        \ctex_set_upmap:nnn { upstsl } { 隶书 } {}
+        \ctex_set_upmap:nnn { upstsl } { SIMLI.TTF } {}
         \ctex_set_upfamily:nnn { zhyou } { upschgt } {}
-        \ctex_set_upmap:nnn { upstht } { 幼圆 } {}
+        \ctex_set_upmap:nnn { upstht } { SIMYOU.TTF } {}
       }
       {
         \setCJKmainfont
-          [ BoldFont = 思源黑体 Medium , ItalicFont = 方正楷体_GBK ] { 思源宋体 }
-        \setCJKsansfont { 思源黑体 }
-        \setCJKmonofont { 华文仿宋 }
-        \setCJKfamilyfont { zhkai } { 方正楷体_GBK }
-        \setCJKfamilyfont { zhfs }  { 华文仿宋 }
-        \setCJKfamilyfont { zhsong }  { 思源宋体 }
-        \setCJKfamilyfont { zhhei }   { 思源黑体 Medium }
-        \setCJKfamilyfont { zhli }    { 隶书 }
-        \setCJKfamilyfont { zhyou }   { 幼圆 }
+          [ BoldFont = SourceHanSansSC-Medium.otf , ItalicFont = FZKTK.TTF ] { SourceHanSerifSC-Regular.otf }
+        \setCJKsansfont { SourceHanSansSC-Regular.otf }
+        \setCJKmonofont { STFANGSO.TTF }
+        \setCJKfamilyfont { zhkai } { FZKTK.TTF }
+        \setCJKfamilyfont { zhfs }  { STFANGSO.TTF }
+        \setCJKfamilyfont { zhsong }  { SourceHanSerifSC-Regular.otf }
+        \setCJKfamilyfont { zhhei }   { SourceHanSansSC-Medium.otf }
+        \setCJKfamilyfont { zhli }    { SIMLI.TTF }
+        \setCJKfamilyfont { zhyou }   { SIMYOU.TTF }
       }
   }
 \NewDocumentCommand \songti   { } { \CJKfamily { zhsong } }
